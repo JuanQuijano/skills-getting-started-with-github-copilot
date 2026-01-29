@@ -1,5 +1,4 @@
 ﻿// Calculadora Simple de Consola
-using System;
 
 namespace CalculadoraConsola
 {
@@ -45,7 +44,7 @@ namespace CalculadoraConsola
                             resultado = numero1 * numero2;
                             break;
                         case "/":
-                            if (numero2 == 0)
+                            if (Math.Abs(numero2) < double.Epsilon)
                             {
                                 Console.WriteLine("\nError: No se puede dividir entre cero.");
                                 operacionValida = false;
