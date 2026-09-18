@@ -40,3 +40,6 @@ Thumbs.db
 .actrc*
 
 __pycache__/
+
+# Local Copilot skills
+.github/skills/
